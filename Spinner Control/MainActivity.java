@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // String array to store the country names
-        String[] countries = new String[]{"India", "Russia", "USA"};
+        String[] countries = new String[]{"Select Country", "India", "Russia", "USA"};
 
         // Linking all the view items with the variable
         countrySpinner = findViewById(R.id.spinner_country);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(countrySpinner.getSelectedItem().toString().equals("India")){
-                    String[] indianStates = new String[]{"Maharashtra", "Punjab", "Kerela"};
+                    String[] indianStates = new String[]{"Select State", "Maharashtra", "Punjab", "Kerela"};
                     ArrayAdapter<String> arrayAdapterForStates = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, indianStates);
                     arrayAdapterForStates.setDropDownViewResource(android.R.layout.simple_spinner_item);
                     stateSpinner.setAdapter(arrayAdapterForStates);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(countrySpinner.getSelectedItem().toString().equals("USA")){
-                    String[] USAStates = new String[]{"Texas", "Washington", "Florida"};
+                    String[] USAStates = new String[]{"Select State", "Texas", "Washington", "Florida"};
                     ArrayAdapter<String> arrayAdapterForStates = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, USAStates);
                     arrayAdapterForStates.setDropDownViewResource(android.R.layout.simple_spinner_item);
                     stateSpinner.setAdapter(arrayAdapterForStates);
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(countrySpinner.getSelectedItem().toString().equals("Russia")){
-                    String[] dubaiStates = new String[]{"Altai", "Buryatia", "Crimea"};
+                    String[] dubaiStates = new String[]{"Select State", "Altai", "Buryatia", "Crimea"};
                     ArrayAdapter<String> arrayAdapterForStates = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item, dubaiStates);
                     arrayAdapterForStates.setDropDownViewResource(android.R.layout.simple_spinner_item);
                     stateSpinner.setAdapter(arrayAdapterForStates);
