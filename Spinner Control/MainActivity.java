@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
 
     // Defining the Spinner variables
     Spinner countrySpinner, stateSpinner, citySpinner;
+    Button ok_button;
+    String address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         countrySpinner = findViewById(R.id.spinner_country);
         stateSpinner = findViewById(R.id.spinner_state);
         citySpinner = findViewById(R.id.spinner_city);
+        ok_button = findViewById(R.id.button);
+
+        ok_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), address, Toast.LENGTH_LONG).show();
+            }
+        });
 
         // Setting array adapter for the country spinner
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item,countries);
@@ -51,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                        address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -72,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                        address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -93,9 +103,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -133,9 +143,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -154,9 +164,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -175,9 +185,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -213,9 +223,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -234,9 +244,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
@@ -255,9 +265,9 @@ public class MainActivity extends AppCompatActivity {
                                 citySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                                     @Override
                                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                                        String address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
+                                         address = countrySpinner.getSelectedItem().toString() + ", " + stateSpinner.getSelectedItem().toString() + ", " +
                                                 citySpinner.getSelectedItem().toString();
-                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
+//                                        Toast.makeText(getApplicationContext(), address,Toast.LENGTH_SHORT).show();
                                     }
 
                                     @Override
